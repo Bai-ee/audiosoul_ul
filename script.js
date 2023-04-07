@@ -730,7 +730,8 @@ setInterval(() => {
 
 //HICETNUNC VERIFICATION
 
-function validateToken(viewer, objkt){
+// function validateToken(viewer, objkt){
+    function validateToken(viewer, objkt){
 
     console.log("///////ABOUT:")
     console.log("• Interactive music collectible with token gate and direct download mechanism.")
@@ -748,15 +749,15 @@ function validateToken(viewer, objkt){
             isOwned = count.length > 0;
     
     console.log("////////VERIFYING OWNER...")
-    console.log("VIEWER:")
-    console.log(viewer)
-    console.log("OBJKT:")
-    console.log(objkt)
+    // console.log("VIEWER:")
+    // console.log(viewer)
+    // console.log("OBJKT:")
+    // console.log(objkt)
     
       
-            console.log(isOwned + " isOwned")
+            // console.log(isOwned + " isOwned")
       
-            if(isOwned){
+            // if(isOwned){
     
                 console.log("CONFIRMING:")
                 console.log(isOwned)
@@ -770,24 +771,24 @@ function validateToken(viewer, objkt){
                     render();
                 }
                 
-                } else {
+                // } else {
     
-                console.log("CONFIRMING:")
-                console.log(isOwned)                    
-                console.log("• Owner Not Verified: Collect to Unlock Downloads")
-                console.log("COLLECT TO DOWNLOAD")
+                // console.log("CONFIRMING:")
+                // console.log(isOwned)                    
+                // console.log("• Owner Not Verified: Collect to Unlock Downloads")
+                // console.log("COLLECT TO DOWNLOAD")
     
-                // downloadButton.style.display = 'none';
-                // purchaseElement.style.display = 'block';
+                // // downloadButton.style.display = 'none';
+                // // purchaseElement.style.display = 'block';
 
-                downloadButton.style.display = 'block';
-                purchaseElement.style.display = 'none';
+                // downloadButton.style.display = 'block';
+                // purchaseElement.style.display = 'none';
 
-                downloadButton.onclick = function () {
-                    render();
-                }
+                // downloadButton.onclick = function () {
+                //     render();
+                // }
                 
-                }
+                // }
             })
         .catch(err => console.log('error', err));
       }
